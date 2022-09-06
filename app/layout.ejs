@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+ 
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid mx-3">
+         <a class="navbar-brand d-flex justify-content-center align-items-end" href="index.html">
+          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a42e625b3e98d0fe8ffa5f9f58096fb8326aa845/week6-202207/logo2.svg" alt="logo" class="d-inline-block align-text-center" width="40" height="40">
+          <h6 class="title-logo ms-3">Coding Home</h6>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+       
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 ms-auto mb-lg-0">  
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="index.html">首頁</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="course.html">課程介紹</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex justify-content-center mx-2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <span class="material-icons d-inline-block">account_circle</span>
+                <span>登入</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark border border-white">
+          <div class="modal-header text-light border-0">
+            <h5 class="modal-title ms-auto" id="exampleModalLabel">登入</h5>
+            <button type="button" class="btn-close  bg-light text-light" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body mx-auto w-80">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label text-light">信箱</label>
+                <input type="email" class="form-control bg-dark" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="請輸入信箱">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label text-light">密碼</label>
+                <input type="password" class="form-control bg-dark" id="exampleInputPassword1" placeholder="請輸入密碼">
+              </div>
+             
+              <button type="button" class="btn linear mt-2 mb-4">登入</button>
+
+              <div class="other-login text-center mt-4">
+                <span class="line d-inline-block text-white "></span>
+                <span class="text-light text-center">其他登入方式</span>
+                <span class="line d-inline-block "></span>
+              </div>
+
+              <a href="#" class="btn btn-light bg-dark d-flex justify-content-center  align-text-center text-light mt-3 w-100" type="submit">
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a42e625b3e98d0fe8ffa5f9f58096fb8326aa845/week6-202207/icon_fb.svg" alt="facebook-login" class="login-icon">
+                <p class="mb-0 px-5">Facebook 登入</p>
+              </a>
+              <a href="#" class="btn btn-light bg-dark d-flex justify-content-center align-text-center text-light mt-3 mb-3 w-100" type="submit">
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a42e625b3e98d0fe8ffa5f9f58096fb8326aa845/week6-202207/icon_google.svg" alt="google-login" class="login-icon">
+                <p class="mb-0 px-5"> Google 登入</p>
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+
+    <%- contents %>
+
+    <footer class="footer bg-dark text-center p-3">
+      
+     <h6 class="text-light">Coding Home © 2022 All Rights Reserved</h6>
+    </footer>
+
+   
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
+  </body>
+
+</html>
