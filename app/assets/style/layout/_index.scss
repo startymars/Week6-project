@@ -276,6 +276,11 @@
 
 }
 
+.img-index{
+  z-index: 2;
+  position: relative;
+}
+
 .share-small{
   left: -45px;
   top:280px;
@@ -289,4 +294,139 @@
 
 .menu{
   font-size: 80px;
+}
+
+
+$xxl:1400px;
+$xl:1200px;
+$lg:992px;
+$md:768px;
+$sm:576px;
+
+@mixin xxl {
+    @media(min-width:$xxl){
+        @content;
+    }
+}
+@mixin xl {
+    @media(min-width:$xl){
+        @content;
+    }
+}
+@mixin lg {
+    @media(min-width:$lg){
+        @content;
+    }
+}
+@mixin md {
+    @media(min-width:$md){
+        @content;
+    }
+}
+@mixin sm {
+    @media (min-width:$sm) {
+        @content;
+    }
+}
+
+body{
+  background: #000;
+}
+
+.radius-24px{
+    border-radius: 24px;
+}
+
+.green-line{
+    width: 50px;
+    height: 3px;
+    background: #62DB54;
+}
+.mb-10{
+  margin-bottom: 40px;
+}
+.p-8{
+  padding: 32px;
+}
+.py-8{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.text-primary{
+  color: #62DB54 !important;
+}
+.bg-share {
+    .share-h{
+        width: 100% !important;
+        height: 220px;
+        @include lg{
+            height: 381px;
+        }
+    }
+    
+    .img{
+        width: 98%;
+        height: 95%;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        &::after{
+            content: "";
+            position: absolute;
+            border: 1px solid #fff;
+            top: 10px;
+            left: -10px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            border-radius: 24px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .share-info-box{
+        @include lg{
+            height: 381px;
+            margin-left: -65px;
+            margin-top: 48px;
+        }
+    }
+    .share-info{
+        border-radius: 24px 24px 24px 0;
+        @include lg{
+            height: 178px;
+        }
+        img{
+            width: 80px;
+            height: 80px;
+            top: -30px;
+            right: 38px;
+        }
+    }
+    .pg-btn{
+        width: auto !important;
+        @include lg{
+            position: absolute;
+            bottom: 0;
+            left: 200px;
+        }
+        @include xl{
+            left: 320px;
+        }
+        @include xxl{
+            left: 370px;
+        }
+    }
+    .swiper-pagination-bullet{
+        background-color: #62DB54;
+        opacity: 1;
+        transition: .3s;
+        &-active {
+            width: 16px;
+            border-radius: 100px;
+        }
+    }
 }
