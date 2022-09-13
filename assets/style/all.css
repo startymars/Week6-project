@@ -13978,6 +13978,11 @@ fieldset:disabled .btn {
   border-radius: 24px;
 }
 
+.img-index {
+  z-index: 2;
+  position: relative;
+}
+
 .share-small {
   left: -45px;
   top: 280px;
@@ -13991,6 +13996,137 @@ fieldset:disabled .btn {
 
 .menu {
   font-size: 80px;
+}
+
+body {
+  background: #000;
+}
+
+.radius-24px {
+  border-radius: 24px;
+}
+
+.green-line {
+  width: 50px;
+  height: 3px;
+  background: #62DB54;
+}
+
+.mb-10 {
+  margin-bottom: 40px;
+}
+
+.p-8 {
+  padding: 32px;
+}
+
+.py-8 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.text-primary {
+  color: #62DB54 !important;
+}
+
+.bg-share .share-h {
+  width: 100% !important;
+  height: 220px;
+}
+
+@media (min-width: 992px) {
+  .bg-share .share-h {
+    height: 381px;
+  }
+}
+
+.bg-share .img {
+  width: 98%;
+  height: 95%;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+.bg-share .img::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #fff;
+  top: 10px;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 24px;
+}
+
+.bg-share .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .bg-share .share-info-box {
+    height: 381px;
+    margin-left: -65px;
+    margin-top: 48px;
+  }
+}
+
+.bg-share .share-info {
+  border-radius: 24px 24px 24px 0;
+}
+
+@media (min-width: 992px) {
+  .bg-share .share-info {
+    height: 178px;
+  }
+}
+
+.bg-share .share-info img {
+  width: 80px;
+  height: 80px;
+  top: -30px;
+  right: 38px;
+}
+
+.bg-share .pg-btn {
+  width: auto !important;
+}
+
+@media (min-width: 992px) {
+  .bg-share .pg-btn {
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-share .pg-btn {
+    left: 320px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-share .pg-btn {
+    left: 370px;
+  }
+}
+
+.bg-share .swiper-pagination-bullet {
+  background-color: #62DB54;
+  opacity: 1;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.bg-share .swiper-pagination-bullet-active {
+  width: 16px;
+  border-radius: 100px;
 }
 
 body {
