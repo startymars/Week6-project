@@ -75,6 +75,7 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $gray:          $gray-500; //添加顏色
+$gray-1000:     #C1C1C1;  //添加顏色
 $dark:          #2D2D2D; // 修改顏色
 $dark2:          #000000; // 新增黑色
 $dark3:         #1C1C1C;  // 新增黑色
@@ -93,6 +94,8 @@ $theme-colors: (
   "dark":       $dark,
   "dark2":      $dark2,   // 新增黑色
   "dark3":      $dark3,   // 新增黑色
+  "gray-1000":  $gray-1000,   // 新增灰色
+
 ) !default;
 // scss-docs-end theme-colors-map
 

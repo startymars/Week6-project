@@ -1,0 +1,22 @@
+.intro-detail::before{
+    content: '';
+    position: absolute;
+    border-left:2px solid #62DB54;
+    height: 26px;
+    left: -10px;
+    
+}
+
+.price-frame{
+    padding: 40px 32px;
+    border: 1px solid #fff;
+}
+
+.click{
+    width: 40px;
+    height: 40px;
+}
+
+.course-info:hover{
+    color: #62DB54;
+}
